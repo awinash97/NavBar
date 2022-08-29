@@ -1,0 +1,113 @@
+@import url("https://use.fontawesome.com/releases/v5.15.4/js/all.js");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+.navbar {
+  height: 80px;
+  background: #F3F3F3;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  transition: 0.8s ease;
+  box-shadow: 0 0 10px #222;
+}
+
+.container {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 189.5px;
+  padding: 0px 15px;
+}
+
+.navRight ul {
+  display: flex;
+  list-style: none;
+}
+
+.navRight ul li {
+  padding: 0px 18px;
+}
+
+.navRight ul li a {
+  color: #818181;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.navRight ul li a:hover,
+.navRight ul li a.active {
+  color: #313335;
+  border-bottom: 2px solid #e9812c;
+  padding-bottom: 5px;
+}
+
+.hackingLOL{
+    display: none;
+}
+
+@media (min-width: 800px) and (max-width: 1050px) {
+  .container {
+    margin: 0px 90px;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 800px) {
+  .container {
+    margin: 0px 0px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 650px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+      }
+
+      .hackingLOL{
+          display:inline-flex;
+          width: 100%;
+          justify-content: right;
+          font-size: 30px;
+          cursor: pointer;
+      }
+
+    .navRight ul{
+        display: block;
+        position: fixed;
+        top : 80px;
+        left: -100%;
+        background: #F3F3F3;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    #click{
+        display: none;
+    }
+
+
+    #click:checked ~ .navRight ul{
+        left: 0%;
+    }
+
+    .navRight ul li{
+        padding-top: 20px;
+    }
+
+    .navRight ul li a{
+        font-size: 30px;
+    }
+    
+}
